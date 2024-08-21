@@ -1,0 +1,148 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+.containerr {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("../../public/img/fb704e29-1bfb-4c4c-9c4d-803b864e88fd.png"); 
+  background-size:cover;
+  object-fit: contain;
+  overflow: hidden !important;
+}
+.slick-slide {
+  margin: 0 10px; /* فاصله بین عکس‌ها */
+  height: 300px;
+  
+}
+.slick-list {
+  margin: 0 -10px; /* برای تراز کردن عکس‌ها */
+  height:300px;
+  margin-top: 12%;
+
+}
+/* Slider.css */
+.slider-container {
+  position: relative;
+  width: 80%;
+}
+
+.slick-next,
+.slick-prev {
+  background-color: #ffffff51 !important; /* رنگ پس‌زمینه دکمه‌ها */
+  border: none; /* بدون حاشیه */
+  width: 30px; /* عرض دکمه‌ها */
+  height: 100%;
+  position: absolute;
+  top: 150px; /* وسط عمودی */
+  z-index: 1; /* بالاتر از سایر عناصر */
+}
+
+.slick-next {
+  position: absolute;
+}
+
+.slick-prev {
+  position: absolute;
+
+}
+.slide {
+  position: relative; /* برای قرار دادن کپشن روی تصویر */
+}
+.caption {
+  position: absolute; 
+  bottom: 40px;
+  left: 50%; 
+  transform: translateX(-50%);
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 5px; 
+  border-radius: 5px;
+  width:80%;
+}
+.containSlider {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  color: #ae593c;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(250, 248, 241, 0.8),
+      rgba(250, 248, 241, 0)
+    ),
+    /* گرادیان */ url("../../public/img/image 6.png"); /* تصویر پس‌زمینه */
+  background-size: unset;
+  background-repeat: repeat;
+}
+
+.containTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.SliderTitle {
+  font-size: xx-large !important;
+  text-wrap: nowrap;
+}
+.containSlider img {
+  width: 35%;
+  margin-top: 2%;
+}
+.circle {
+  background-color: #ae593c;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+.footer{
+  background-color: rgba(240, 248, 255, 0.911);
+  width:50%;
+  margin-top: 8%;
+  display: flex;
+  flex-direction: row;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: hidden !important;
+  direction: rtl;
+}
+.overlayFooter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  background: linear-gradient(to bottom, #faf8f1, rgba(255, 255, 255, 0));
+  overflow: hidden;
+}
+.imageFooter{
+  width: 70%;
+  max-width: 250px;
+}
+.col{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .col{
+    width: 50%;
+  }
+  .imageFooter,.imageCol{
+    display: none;
+  }
+  .footer{
+    width: 100%;
+    text-wrap: nowrap;
+  }
+.slide{
+  width: 50%;
+  max-width: 300px;
+}
+
+}

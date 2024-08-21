@@ -1,0 +1,129 @@
+.containAbout {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    color: #d17640;
+    background-image: 
+      linear-gradient(to bottom, rgba(250, 248, 241, 0.8), rgba(250, 248, 241, 0)), /* گرادیان */
+      url("../../public/img/image 6.png"); /* تصویر پس‌زمینه */
+    background-size: unset; 
+    background-repeat: repeat; 
+  }
+  
+.containTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: -30px;
+}
+.aboutTitle {
+  font-size: xx-large !important;
+  text-wrap: nowrap;
+}
+.containAbout img {
+  width: 50%;
+}
+.circle {
+  background-color: #d17640;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+.aboutTxt {
+  width: 30%;
+  position: relative;
+  text-align: right;
+  margin-top: 4%;
+  direction: rtl;
+}
+.aboutTxt p {
+  font-size: larger;
+  color: black;
+}
+.continueBtn {
+  background-color: #06ab2b;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  font-size: x-large;
+  left: 0;
+  position: relative;
+}
+.continueBtn:hover{
+    box-shadow: 2px 2px 8px #5e5e5e;
+  
+  }
+.containBtn {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.laptopShow {
+}
+.mobileShow {
+  display: none;
+}
+
+.containAbout {
+  position: relative; /* برای قرار دادن متن روی تصویر */
+}
+
+.mobileShow {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.overlayMobileAbout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #faf8f1, rgba(255, 255, 255, 0));
+  display: none;
+}
+@media screen and (max-width: 900px) {
+    .mobileShow {
+        display: flex;
+        height: 100vh;
+      }
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutTxt {
+    position: absolute;
+  }
+  .overlayMobileAbout {
+    display: initial;
+  }
+  .laptopShow {
+    display: none;
+  }
+  .mobileShow {
+    display: flex;
+    height:70vh;
+  }
+  .containAbout img {
+    width: 100%;
+  }
+  .containAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .aboutTxt {
+    left: 0;
+    width: 90%;
+  }
+  .containTitle {
+    margin-right: 10px;
+  }
+  .aboutTxt {
+    padding: 20px;
+  }
+  .aboutTxt p {
+    margin-right: 30px;
+  }
+}

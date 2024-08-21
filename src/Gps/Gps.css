@@ -1,0 +1,174 @@
+.containGps {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  color: #d17640;
+  justify-content: space-between;
+  background-image: url("../../public//img//image\ 6.png");
+  background-size: unset;
+  background-repeat: repeat;
+}
+.containTitleGps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutTitle {
+  font-size: xx-large !important;
+  text-wrap: nowrap;
+}
+.containGps img {
+  width: 40%;
+}
+.circle {
+  background-color: #d17640;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.gpsTxt {
+  width: 30%;
+  position: relative;
+  text-align: right;
+  margin-top: 4%;
+  direction: rtl;
+  margin-right: 10%;
+}
+.gpsTxt p {
+  font-size: larger;
+  color: black;
+  margin-top: -20px;
+}
+.continueBtn {
+  background-color: #06ab2b;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  font-size: x-large;
+  left: 0;
+  position: relative;
+}
+.containBtn {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.mobileShow {
+  display: none;
+}
+
+.containGps {
+  position: relative; /* برای قرار دادن متن روی تصویر */
+}
+
+.mobileShow {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.overlayMobileGps {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #faf8f1, rgba(255, 255, 255, 0.459));
+  display: none;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+.row p {
+  padding: 0;
+  margin: 0;
+}
+.inputGps {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+}
+.inputGps:focus {
+  border: 2px solid #d17640;
+  outline: none;
+}
+.svgAdd{
+  width: 25px !important;
+  margin-left: 10px;
+}
+.transparentBtn{
+  background: transparent;
+  border: none;
+  color: #d17640;
+  font-weight: 600;
+  font-size: medium;
+  display: inline-flex;
+  padding: 10px;
+}
+.transparentBtn:hover{
+  text-shadow: 2px 2px 8px #5e5e5e;
+}
+.searchBtn{
+  background-color: #d17640;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: large;
+
+}
+.searchBtn:hover{
+  box-shadow: 2px 2px 8px #5e5e5e;
+
+}
+@media screen and (max-width: 900px) {
+  .mobileShow {
+    display: flex;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gpsTxt {
+    position: absolute;
+  }
+  .overlayMobileGps {
+    display: initial;
+  }
+  .laptopShow {
+    display: none;
+  }
+  .mobileShow {
+    display: flex;
+    height: 70vh;
+  }
+  .containGps img {
+    width: 100%;
+  }
+  .containGps {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .gpsTxt {
+    left: 0;
+    width: 90%;
+  }
+  .containTitleGps {
+    margin-right: 10px;
+  }
+  .gpsTxt {
+    padding: 20px;
+  }
+  .gpsTxt p {
+    margin-right: 30px;
+  }
+}

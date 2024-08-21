@@ -1,0 +1,194 @@
+.containfood {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  color: #ae593c;
+  justify-content: space-between;
+  background-image: url("../../public//img//image\ 6.png");
+  background-size: unset;
+  background-repeat: repeat;
+}
+.containTitlefood {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutTitle {
+  font-size: xx-large !important;
+  text-wrap: nowrap;
+}
+.containfood img {
+  width: 40%;
+}
+.circle {
+  background-color: #d17640;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.circleDark{
+  background-color: #ae593c !important;
+
+}
+.foodTxt {
+  width: 30%;
+  position: relative;
+  text-align: right;
+  margin-top: 4%;
+  direction: rtl;
+  margin-right: 10%;
+}
+.foodTxt p {
+  font-size: larger;
+  color: black;
+  margin-top: -20px;
+}
+.continueBtn {
+  background-color: #06ab2b;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  font-size: x-large;
+  left: 0;
+  position: relative;
+}
+.containBtn {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.mobileShowFood {
+  display: none;
+}
+
+.containfood {
+  position: relative; /* برای قرار دادن متن روی تصویر */
+}
+
+.mobileShowFood {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.overlayMobilefood {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #faf8f1, rgba(255, 255, 255, 0.459));
+  display: none;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+.row p {
+  padding: 0;
+  margin: 0;
+}
+.inputfood {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+}
+.inputfood:focus {
+  border: 2px solid #ae593c !important;
+  outline: none;
+}
+.titleInputfood{
+  width: 100px;
+}
+.svgAdd{
+  width: 25px !important;
+  margin-left: 10px;
+}
+.transparentBtn{
+  background: transparent;
+  border: none;
+  color: #d17640;
+  font-weight: 600;
+  font-size: medium;
+  display: inline-flex;
+  padding: 10px;
+}
+.transparentBtn:hover{
+  text-shadow: 2px 2px 8px #5e5e5e;
+}
+.searchBtn{
+  background-color: #d17640;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: large;
+
+}
+.foodBtn{
+  background-color: #ae593c !important;
+  position: relative;
+  z-index: 14;
+}
+.searchBtn:hover{
+  box-shadow: 2px 2px 8px #5e5e5e;
+
+}
+.marginTop10{
+  margin-top: 10px;
+}
+@media screen and (max-width: 900px) {
+  .mobileShowFood {
+    display: flex;
+    height: 100vh;
+  }
+ 
+}
+
+@media screen and (max-width: 1200px) {
+  .foodTxt{
+    margin-right: 1%;
+
+  }
+  .foodTxt {
+    position: absolute;
+  }
+  .overlayMobilefood {
+    display: initial;
+  }
+  .laptopShowFood {
+    display: none;
+  }
+  .mobileShowFood {
+    display: flex;
+    height: 90vh;
+  }
+  .containfood img {
+    width: 100%;
+  }
+  .containfood {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .foodTxt {
+    left: 0;
+    width: 90%;
+  }
+  .containTitlefood {
+    margin-right: 10px;
+  }
+  .foodTxt {
+    padding: 20px;
+  }
+  .foodTxt p {
+    margin-right: 30px;
+  }
+}
