@@ -2,7 +2,7 @@ import "./CreateTrip.css"
 const CreateTrip = () => {
     return (
         <div className="containTrip">
-            <img className="laptopShowTrip" src="/img/vector3.png" />
+            <img className="laptopShowTrip" src="/img/Vector3.png" />
             <img className="mobileShowTrip" src="/img/2bab8810-d984-4a3a-988b-0336f0509c10.webp" />
             <div className="overlayMobileTrip"></div>
 
