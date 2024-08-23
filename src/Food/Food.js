@@ -2,7 +2,7 @@ import "./Food.css"
 const Food = () => {
     return (
         <div className="containfood">
-            <img className="laptopShowFood" src="/img/Vector 3 (2).png" />
+            <img className="laptopShowFood" src="/img/Vector4.png" />
             <img className="mobileShowFood" src="/img/4578c692-b2f8-42cf-85b9-aabf4f972608.webp" />
             <div className="overlayMobilefood"></div>
 

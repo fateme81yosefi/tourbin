@@ -2,7 +2,7 @@ import "./Celebration.css"
 const Celebration = () => {
     return (
         <div className="containCelebration">
-            <img className="laptopShowCelebration" src="/img/vector 5.png" />
+            <img className="laptopShowCelebration" src="/img/vector5.png" />
             <img className="mobileShowCelebration" src="/img/2bab8810-d984-4a3a-988b-0336f0509c10.webp" />
             <div className="overlayMobileCelebration"></div>
 
